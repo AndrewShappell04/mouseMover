@@ -1,8 +1,15 @@
 import pyautogui
 import time
+import pygetwindow as gw
+from screeninfo import get_monitors
 
-# Wait 3 seconds to close command prompt
+# Wait 3 seconds to close command prompt and open Teams
 time.sleep(3)
+
+window = gw.getWindowsWithTitle("Teams")
+
+# Check to see which monitor teams is on
+
 
 # Get the center of the screen
 screen_width, screen_height = pyautogui.size()
@@ -17,7 +24,7 @@ time.sleep(2)
 
 run_for = 0
 
-# Run script for  hour
+# Run script for one hour
 while run_for < 12:
     # Moves the mouse right 100 pixels and down 50 pixels
     pyautogui.moveRel(xOffset=100, yOffset=50, duration=.75)
