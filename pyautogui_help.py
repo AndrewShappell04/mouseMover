@@ -13,3 +13,5 @@ print(f"Center of screen: ({center_x}, {center_y})")
 print(help(pyautogui.size))
 
 print(pyautogui.size())
+
+print(pyautogui.getAllScreens())
